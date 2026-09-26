@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demander un pré-audit de votre actif immobilier</title>
+  <meta name="description" content="Décrivez votre actif et votre question en quelques minutes : un associé vous rappelle sous 48 heures ouvrées avec une première lecture et une proposition.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Demander un pré-audit de votre actif immobilier">
+  <meta property="og:description" content="Décrivez votre actif et votre question en quelques minutes : un associé vous rappelle sous 48 heures ouvrées avec une première lecture et une proposition.">
+  <meta name="theme-color" content="#0E1F3A">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230E1F3A%22%2F%3E%3Crect%20x%3D%226%22%20y%3D%226%22%20width%3D%2252%22%20height%3D%2252%22%20fill%3D%22none%22%20stroke%3D%22%23C2A06A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2242%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2226%22%20font-weight%3D%22600%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3ECA%3C%2Ftext%3E%3C%2Fsvg%3E">
+  <link rel="preload" href="assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="bandeau-demo">Démonstration préparée pour votre annonce : nom, chiffres et textes sont fictifs, votre maquette et vos contenus les remplaceront.</div>
+  <header class="entete">
+    <div class="conteneur">
+      <a class="marque" href="index.html" aria-label="Conseil et Audit Immobilier, accueil"><span class="marque-sigle">CA</span><span class="marque-nom"><strong>Conseil &amp; Audit</strong><span>Immobilier</span></span></a>
+      <button class="bouton-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="expertises.html">Expertises</a></li>
+          <li><a href="cabinet.html">Le cabinet</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="bouton" href="pre-audit.html" aria-current="page">Demander un pré-audit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="page-titre fond-marine">
+      <div class="conteneur">
+        <p class="fil"><a href="index.html">Accueil</a> / Pré-audit</p>
+        <span class="surtitre">Pré-audit</span>
+        <h1>Demander un pré-audit</h1>
+        <p class="chapeau">Quelques minutes pour nous décrire votre actif et votre question. Le pré-audit ne vous engage à rien.</p>
+      </div>
+    </section>
+    <section class="fond-ivoire">
+      <div class="conteneur formulaire-bloc">
+        <aside class="aside-infos">
+          <h2>Comment ça se passe</h2>
+          <ol>
+            <li>Vous remplissez ce formulaire.</li>
+            <li>Un associé vous rappelle sous 48 heures ouvrées pour préciser votre besoin.</li>
+            <li>Vous recevez une première lecture de votre situation et une proposition d'intervention.</li>
+          </ol>
+        </aside>
+        <div>
+          <form data-formulaire aria-label="Demande de pré-audit">
+            <fieldset>
+              <legend>Vous êtes</legend>
+              <div class="choix" data-requis-groupe>
+                <label><input type="radio" name="profil" value="proprietaire"> Propriétaire</label>
+                <label><input type="radio" name="profil" value="investisseur"> Investisseur</label>
+                <label><input type="radio" name="profil" value="entreprise"> Entreprise utilisatrice</label>
+                <label><input type="radio" name="profil" value="autre"> Autre</label>
+              </div>
+              <span class="erreur" aria-live="polite"></span>
+            </fieldset>
+            <fieldset>
+              <legend>Votre actif</legend>
+              <div class="champs">
+                
+                <div class="champ">
+                  <label for="type_actif">Type d'actif <span class="obligatoire">*</span></label>
+                  <select id="type_actif" name="type_actif" required>
+                    <option value="">Choisir…</option>
+                    <option>Bureaux</option><option>Commerce</option><option>Activité ou logistique</option><option>Résidentiel</option><option>Ensemble mixte</option>
+                  </select>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                
+                <div class="champ">
+                  <label for="localisation">Ville ou code postal <span class="obligatoire">*</span></label>
+                  <input id="localisation" name="localisation" type="text" required>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                
+                <div class="champ">
+                  <label for="surface">Surface approximative (m²)</label>
+                  <input id="surface" name="surface" type="number" min="1" inputmode="numeric">
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                
+                <div class="champ">
+                  <label for="objet">Objet de la demande <span class="obligatoire">*</span></label>
+                  <select id="objet" name="objet" required>
+                    <option value="">Choisir…</option>
+                    <option>Acquisition</option><option>Cession</option><option>Valorisation ou arbitrage</option><option>Conformité réglementaire</option><option>Travaux et plan pluriannuel</option>
+                  </select>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                
+                <div class="champ">
+                  <label for="echeance">Échéance</label>
+                  <select id="echeance" name="echeance">
+                    <option value="">Choisir…</option>
+                    <option>Moins de 3 mois</option><option>3 à 6 mois</option><option>Plus de 6 mois</option>
+                  </select>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                <div class="champ plein">
+                  <label for="message">Votre question en quelques lignes</label>
+                  <textarea id="message" name="message"></textarea>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Vos coordonnées</legend>
+                <div class="champs">
+                  
+                <div class="champ">
+                  <label for="nom">Nom et prénom <span class="obligatoire">*</span></label>
+                  <input id="nom" name="nom" type="text" autocomplete="name" required>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                  
+                <div class="champ">
+                  <label for="societe">Société</label>
+                  <input id="societe" name="societe" type="text" autocomplete="organization">
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                  
+                <div class="champ">
+                  <label for="email">E-mail professionnel <span class="obligatoire">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                  
+                <div class="champ">
+                  <label for="telephone">Téléphone <span class="obligatoire">*</span></label>
+                  <input id="telephone" name="telephone" type="tel" autocomplete="tel" pattern="[0-9 +().-]{10,}" required>
+                  <span class="erreur" aria-live="polite"></span>
+                </div>
+                </div>
+            </fieldset>
+              <div class="pot-de-miel" aria-hidden="true"><label>Laissez ce champ vide <input name="site_web" tabindex="-1" autocomplete="off"></label></div>
+              <label class="consentement"><input type="checkbox" name="accord"> <span>J'accepte que mes données soient utilisées pour répondre à ma demande, conformément à la <a href="mentions-legales.html#donnees">politique de confidentialité</a>. Elles ne sont ni cédées ni utilisées à des fins publicitaires.</span></label>
+              <span class="erreur erreur-accord" aria-live="polite" style="display:block;margin:-16px 0 20px"></span>
+              <button class="bouton" type="submit">Envoyer ma demande de pré-audit</button>
+              <p class="mention-form">* Champs obligatoires.</p>
+          </form>
+          <div class="succes" tabindex="-1" role="status">
+            <h3>Votre demande est bien reçue</h3>
+            <p>Un associé vous rappelle sous 48 heures ouvrées. Un e-mail de confirmation vient de vous être envoyé.</p>
+            <p class="mention-form">Démonstration : aucune donnée n'a été envoyée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="grille">
+        <div>
+          <a class="marque" href="index.html" aria-label="Accueil"><span class="marque-sigle">CA</span><span class="marque-nom"><strong>Conseil &amp; Audit</strong><span>Immobilier</span></span></a>
+          <p style="margin-top:22px;max-width:320px">Cabinet indépendant de conseil et d'audit immobilier au service des propriétaires, des investisseurs et des entreprises.</p>
+        </div>
+        <div>
+          <h4>Expertises</h4>
+          <ul><li><a href="expertises.html#audit">Audit technique et réglementaire</a></li><li><a href="expertises.html#conseil">Stratégie patrimoniale</a></li><li><a href="expertises.html#transaction">Accompagnement des transactions</a></li></ul>
+        </div>
+        <div>
+          <h4>Cabinet</h4>
+          <ul><li><a href="cabinet.html">Notre approche</a></li><li><a href="actualites.html">Actualités et études de cas</a></li><li><a href="pre-audit.html">Demander un pré-audit</a></li></ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul><li>Adresse du cabinet<br>75008 Paris</li><li><a href="tel:+33100000000">01 00 00 00 00</a></li><li><a href="contact.html">Nous écrire</a></li></ul>
+        </div>
+      </div>
+      <div class="pied-bas">
+        <span>© <span data-annee>2026</span> Conseil &amp; Audit Immobilier</span>
+        <span><a href="mentions-legales.html">Mentions légales et confidentialité</a> · <button class="lien-bouton" data-gerer-cookies>Gérer les cookies</button></span>
+      </div>
+    </div>
+  </footer>
+  <div class="cookies" role="dialog" aria-labelledby="cookies-titre">
+    <h2 id="cookies-titre">Votre vie privée</h2>
+    <p>Avec votre accord, nous mesurons la fréquentation de ce site pour l'améliorer. Vous pouvez changer d'avis à tout moment depuis le pied de page.</p>
+    <div class="cookies-actions">
+      <button class="bouton" data-cookies="refuser">Tout refuser</button>
+      <button class="bouton" data-cookies="accepter">Tout accepter</button>
+      <button class="bouton bouton-ligne" data-cookies="personnaliser">Personnaliser</button>
+    </div>
+    <div class="cookies-detail">
+      <div class="categorie"><div><strong>Nécessaires</strong><span>Mémorisent votre choix pendant six mois. Toujours actifs.</span></div><input type="checkbox" class="interrupteur" checked disabled aria-label="Cookies nécessaires, toujours actifs"></div>
+      <div class="categorie"><div><strong>Mesure d'audience</strong><span>Statistiques de fréquentation, sans publicité ni revente.</span></div><input type="checkbox" class="interrupteur" id="mesure-audience" aria-label="Mesure d'audience"></div>
+      <div class="cookies-actions"><button class="bouton" data-cookies="enregistrer">Enregistrer mes choix</button></div>
+    </div>
+  </div>
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
