@@ -16,6 +16,10 @@
       const ouvert = nav.classList.toggle("ouvert");
       boutonMenu.setAttribute("aria-expanded", String(ouvert));
     });
+    // Échap referme le menu
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("ouvert")) { boutonMenu.click(); boutonMenu.focus(); }
+    });
   }
 
   // Consentement cookies : choix conservé 6 mois (recommandation CNIL), refus aussi simple que l'acceptation
