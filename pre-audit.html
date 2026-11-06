@@ -12,11 +12,13 @@
   <meta property="og:description" content="Décrivez votre actif et votre question en quelques minutes : un associé vous rappelle sous 48 heures ouvrées avec une première lecture et une proposition.">
   <meta name="theme-color" content="#0E1F3A">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20fill%3D%22%230E1F3A%22%2F%3E%3Crect%20x%3D%226%22%20y%3D%226%22%20width%3D%2252%22%20height%3D%2252%22%20fill%3D%22none%22%20stroke%3D%22%23C2A06A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2242%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2226%22%20font-weight%3D%22600%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%3ECA%3C%2Ftext%3E%3C%2Fsvg%3E">
-  <link rel="preload" href="assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/halibut.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sofia-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/reprise.css">
 </head>
 <body>
-  <div class="bandeau-demo">Démonstration préparée pour une annonce : nom, chiffres et textes sont fictifs, votre maquette et vos contenus les remplaceront.</div>
+  <div class="bandeau-demo">Démonstration préparée pour une annonce : nom, chiffres et textes sont fictifs, votre maquette et vos contenus les remplaceront.</div>
   <header class="entete">
     <div class="conteneur">
       <a class="marque" href="index.html" aria-label="Conseil et Audit Immobilier, accueil"><span class="marque-sigle">CA</span><span class="marque-nom"><strong>Conseil &amp; Audit</strong><span>Immobilier</span></span></a>
@@ -50,7 +52,7 @@
           <ol>
             <li>Vous remplissez ce formulaire.</li>
             <li>Un associé vous rappelle sous 48 heures ouvrées pour préciser votre besoin.</li>
-            <li>Vous recevez une première lecture de votre situation et une proposition d'intervention.</li>
+            <li>Vous recevez une première lecture de votre situation et une proposition d’intervention.</li>
           </ol>
         </aside>
         <div>
@@ -70,7 +72,7 @@
               <div class="champs">
                 
                 <div class="champ">
-                  <label for="type_actif">Type d'actif <span class="obligatoire">*</span></label>
+                  <label for="type_actif">Type d’actif <span class="obligatoire">*</span></label>
                   <select id="type_actif" name="type_actif" required>
                     <option value="">Choisir…</option>
                     <option>Bureaux</option><option>Commerce</option><option>Activité ou logistique</option><option>Résidentiel</option><option>Ensemble mixte</option>
@@ -144,7 +146,7 @@
                 </div>
             </fieldset>
               <div class="pot-de-miel" aria-hidden="true"><label>Laissez ce champ vide <input name="site_web" tabindex="-1" autocomplete="off"></label></div>
-              <label class="consentement"><input type="checkbox" name="accord"> <span>J'accepte que mes données soient utilisées pour répondre à ma demande, conformément à la <a href="mentions-legales.html#donnees">politique de confidentialité</a>. Elles ne sont ni cédées ni utilisées à des fins publicitaires.</span></label>
+              <label class="consentement"><input type="checkbox" name="accord"> <span>J’accepte que mes données soient utilisées pour répondre à ma demande, conformément à la <a href="mentions-legales.html#donnees">politique de confidentialité</a>. Elles ne sont ni cédées ni utilisées à des fins publicitaires.</span></label>
               <span class="erreur erreur-accord" aria-live="polite" style="display:block;margin:-16px 0 20px"></span>
               <button class="bouton" type="submit">Envoyer ma demande de pré-audit</button>
               <p class="mention-form">* Champs obligatoires.</p>
@@ -152,7 +154,7 @@
           <div class="succes" tabindex="-1" role="status">
             <h3>Votre demande est bien reçue</h3>
             <p>Un associé vous rappelle sous 48 heures ouvrées. Un e-mail de confirmation vient de vous être envoyé.</p>
-            <p class="mention-form">Démonstration : aucune donnée n'a été envoyée.</p>
+            <p class="mention-form">Démonstration : aucune donnée n’a été envoyée.</p>
           </div>
         </div>
       </div>
@@ -163,7 +165,7 @@
       <div class="grille">
         <div>
           <a class="marque" href="index.html" aria-label="Accueil"><span class="marque-sigle">CA</span><span class="marque-nom"><strong>Conseil &amp; Audit</strong><span>Immobilier</span></span></a>
-          <p style="margin-top:22px;max-width:320px">Cabinet indépendant de conseil et d'audit immobilier au service des propriétaires, des investisseurs et des entreprises.</p>
+          <p style="margin-top:22px;max-width:320px">Cabinet indépendant de conseil et d’audit immobilier au service des propriétaires, des investisseurs et des entreprises.</p>
         </div>
         <div>
           <h4>Expertises</h4>
@@ -186,7 +188,7 @@
   </footer>
   <div class="cookies" role="dialog" aria-labelledby="cookies-titre">
     <h2 id="cookies-titre">Votre vie privée</h2>
-    <p>Avec votre accord, nous mesurons la fréquentation de ce site pour l'améliorer. Vous pouvez changer d'avis à tout moment depuis le pied de page.</p>
+    <p>Avec votre accord, nous mesurons la fréquentation de ce site pour l’améliorer. Vous pouvez changer d’avis à tout moment depuis le pied de page.</p>
     <div class="cookies-actions">
       <button class="bouton" data-cookies="refuser">Tout refuser</button>
       <button class="bouton" data-cookies="accepter">Tout accepter</button>
@@ -194,7 +196,7 @@
     </div>
     <div class="cookies-detail">
       <div class="categorie"><div><strong>Nécessaires</strong><span>Mémorisent votre choix pendant six mois. Toujours actifs.</span></div><input type="checkbox" class="interrupteur" checked disabled aria-label="Cookies nécessaires, toujours actifs"></div>
-      <div class="categorie"><div><strong>Mesure d'audience</strong><span>Statistiques de fréquentation, sans publicité ni revente.</span></div><input type="checkbox" class="interrupteur" id="mesure-audience" aria-label="Mesure d'audience"></div>
+      <div class="categorie"><div><strong>Mesure d’audience</strong><span>Statistiques de fréquentation, sans publicité ni revente.</span></div><input type="checkbox" class="interrupteur" id="mesure-audience" aria-label="Mesure d'audience"></div>
       <div class="cookies-actions"><button class="bouton" data-cookies="enregistrer">Enregistrer mes choix</button></div>
     </div>
   </div>

@@ -22,7 +22,7 @@
     });
   }
 
-  // Consentement cookies : choix conservé 6 mois (recommandation CNIL), refus aussi simple que l'acceptation
+  // Consentement cookies : choix conservé 6 mois (recommandation CNIL), refus aussi simple que l’acceptation
   const CLE = "consentement-cookies";
   const DUREE = 1000 * 60 * 60 * 24 * 182;
   const lireChoix = () => {
@@ -36,7 +36,7 @@
     try { localStorage.setItem(CLE, JSON.stringify(choix)); } catch {}
     appliquer(choix);
   };
-  // La mesure d'audience ne se charge qu'après accord explicite
+  // La mesure d’audience ne se charge qu’après accord explicite
   const appliquer = (choix) => {
     if (choix && choix.mesure && !window.__mesureChargee) {
       window.__mesureChargee = true;
@@ -63,13 +63,13 @@
     if (choix) appliquer(choix); else montrer();
   }
 
-  // Formulaires : validation côté navigateur, message d'erreur par champ, piège à robots
+  // Formulaires : validation côté navigateur, message d’erreur par champ, piège à robots
   document.querySelectorAll("form[data-formulaire]").forEach((form) => {
     form.setAttribute("novalidate", "");
     const messages = {
       valueMissing: "Ce champ est obligatoire.",
-      typeMismatch: "Le format n'est pas valide.",
-      patternMismatch: "Le format n'est pas valide.",
+      typeMismatch: "Le format n’est pas valide.",
+      patternMismatch: "Le format n’est pas valide.",
     };
     const verifier = (champ) => {
       const bloc = champ.closest(".champ");
